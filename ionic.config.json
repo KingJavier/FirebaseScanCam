@@ -1,0 +1,7 @@
+{
+  "name": "FirebaseScanCam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
