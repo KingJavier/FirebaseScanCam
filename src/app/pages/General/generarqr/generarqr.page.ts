@@ -1,7 +1,7 @@
 import { Component} from '@angular/core';
 import { ToastController } from '@ionic/angular';
 import { user } from 'rxfire/auth';
-import { User } from '../../shared/user.interface';
+import { User } from '../../../shared/user.interface';
 @Component({
   selector: 'app-generarqr',
   templateUrl: './generarqr.page.html',
