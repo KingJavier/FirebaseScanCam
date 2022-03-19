@@ -9,7 +9,7 @@ import { GenerarqrPageRoutingModule } from './generarqr-routing.module';
 
 import { GenerarqrPage } from './generarqr.page';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
-import { ComponentsModule } from '../../components/components.module';
+import { ComponentsModule } from '../../../components/components.module';
 
 @NgModule({
   imports: [

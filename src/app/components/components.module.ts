@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
+import { MenuLoggedComponent } from './menu-logged/menu-logged.component';
 
 
 @NgModule({
   declarations: [
-    MenuComponent
+    MenuComponent,
+    MenuLoggedComponent
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { RouterModule } from '@angular/router';
     RouterModule,
   ],
   exports: [
-    MenuComponent
+    MenuComponent,
+    MenuLoggedComponent
   ]
 })
 export class ComponentsModule { }

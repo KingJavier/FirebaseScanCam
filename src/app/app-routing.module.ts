@@ -13,11 +13,11 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./pages/general/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'register',
-    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+    loadChildren: () => import('./pages/general/register/register.module').then( m => m.RegisterPageModule)
   },
   {
     path: 'logged',
@@ -25,15 +25,15 @@ const routes: Routes = [
   },
   {
     path: 'forgot-password',
-    loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+    loadChildren: () => import('./pages/general/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
   {
     path: 'generarqr',
-    loadChildren: () => import('./pages/generarqr/generarqr.module').then( m => m.GenerarqrPageModule)
+    loadChildren: () => import('./pages/general/generarqr/generarqr.module').then( m => m.GenerarqrPageModule)
   },
   {
     path: 'verificacion-email',
-    loadChildren: () => import('./pages/verificacion-email/verificacion-email.module').then( m => m.VerificacionEmailPageModule)
+    loadChildren: () => import('./pages/general/verificacion-email/verificacion-email.module').then( m => m.VerificacionEmailPageModule)
   },
 ];
 

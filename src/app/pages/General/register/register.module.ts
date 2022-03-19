@@ -8,7 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterPageRoutingModule } from './register-routing.module';
 
 import { RegisterPage } from './register.page';
-import { ComponentsModule } from '../../components/components.module';
+import { ComponentsModule } from '../../../components/components.module';
 
 @NgModule({
   imports: [

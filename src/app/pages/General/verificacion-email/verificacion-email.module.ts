@@ -8,6 +8,8 @@ import { VerificacionEmailPageRoutingModule } from './verificacion-email-routing
 
 import { VerificacionEmailPage } from './verificacion-email.page';
 
+
+
 @NgModule({
   imports: [
     CommonModule,
