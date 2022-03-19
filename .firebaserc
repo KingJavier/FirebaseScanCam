@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "scancam-ccb9d": {
+      "hosting": {
+        "app": [
+          "scancam-ccb9d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "scancam-ccb9d"
+  }
+}

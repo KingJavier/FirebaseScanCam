@@ -76,6 +76,27 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
+//
+@media only screen and (min-width : 901px){
+  .fondo{
+    --background: url(https://fondosmil.com/fondo/65275.jpg) 0 0/100% 100% no-repeat;
+  }
+}
+@media only screen and (max-width : 900px){
+  .fondo{
+    --background: url(https://png.pngtree.com/thumb_back/fw800/background/20210128/pngtree-blue-and-white-watercolor-smudge-background-image_545901.jpg) 0 0/100% 100% no-repeat;
+  }
+}
+
+.card{
+  box-shadow: 0px 1px 20px #808080;
+}
+
+.titulos{
+  text-align: center;
+}
+
+
 @media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
