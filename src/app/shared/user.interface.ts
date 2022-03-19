@@ -9,4 +9,5 @@ export interface User{
   email: string;
   password: string;
   rol: 'seguridad'|'invitado'|'aprendiz'|'funcionario'|'gestor';
+  estado: boolean;
 }

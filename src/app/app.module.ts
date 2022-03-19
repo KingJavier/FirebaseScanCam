@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -23,7 +23,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 //Qr
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
-import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner';
+
+import { HomePageModule } from './pages/home/home.module';
+import { ComponentsModule } from './components/components.module';
+
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -38,6 +42,9 @@ import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner';
     AngularFirestoreModule,
     AngularFireAuthModule,
     NgxQRCodeModule,
+    ReactiveFormsModule,
+    HomePageModule,
+    ComponentsModule,
     ReactiveFormsModule
   ],
   providers: [{ provide: RouteReuseStrategy,useClass: IonicRouteStrategy } ],

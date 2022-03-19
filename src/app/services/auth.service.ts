@@ -27,9 +27,10 @@ export class AuthService {
 
   //metodo Logeo Normal
 
-  login(correo: string, password: string){
+  login(email: string, password: string){
     try{
-      return this.afAuth.signInWithEmailAndPassword(correo, password);
+      return this.afAuth.signInWithEmailAndPassword(email, password);
+      this.sendVerificationEmail();
     }catch (error) {
       console.log('Error->', error);
     }
@@ -52,17 +53,36 @@ export class AuthService {
       console.log('Error->', error);
     }
   }
-  
-  requestPassword() {}
 
-  async toastError(error: any) {
-    const toast = await this.toastController.create({
-      message:
-        (error.message as string).split(': ')[1] || 'Algo malo ha ocurrido',
-      duration: 4000,
-      color: 'danger',
-    });
-    toast.present();
+  // async registrar(data: User){
+  //   try {
+  //     await this.afAuth.createUserWithEmailAndPassword(data.email, data.password);
+  //     this.sendVerificationEmail();
+  //     return user;
+  //   } catch (error) {
+  //     console.log('Error->', error);
+  //   }
+  // }
+
+
+  async sendVerificationEmail(): Promise<void>{
+    try{
+      return (await this.afAuth.currentUser).sendEmailVerification();
+    }
+    catch(error){
+      console.log('Error->', error);
+    }
   }
-}
 
+//   requestPassword() {}
+
+//   async toastError(error: any) {
+//     const toast = await this.toastController.create({
+//       message:
+//         (error.message as string).split(': ')[1] || 'Algo malo ha ocurrido',
+//       duration: 4000,
+//       color: 'danger',
+//     });
+//     toast.present();
+//   }
+}

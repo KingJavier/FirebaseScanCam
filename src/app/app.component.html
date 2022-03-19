@@ -1,51 +1,7 @@
 <ion-app>
-  <ion-split-pane contentId="main"  when="(min-width: 10000px)">
 
-  <ion-menu side="start" menuId="custom" contentId="main">
-    <ion-header>
-      <ion-toolbar >
-
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-
-        <ion-menu-toggle [routerLink]="['/login']">
-          <ion-item button lines="none" detail>
-
-            <ion-icon name="person-circle-outline" size="large" slot="start"></ion-icon>
-            <ion-label>
-              Acceder
-            </ion-label>
-
-          </ion-item>
-        </ion-menu-toggle>
-
-        <ion-menu-toggle [routerLink]="['/register']">
-
-          <ion-item button lines="none" detail>
-            <ion-icon name="person-add-sharp" size="large" slot="start"></ion-icon>
-            <ion-label>
-              Registro
-            </ion-label>
-          </ion-item>
-
-        </ion-menu-toggle>
-
-        <ion-menu-toggle [routerLink]="['/generarqr']">
-          <ion-item button lines="none" detail>
-            <ion-icon name="qr-code-sharp" size="large" slot="start"></ion-icon>
-            <ion-label>
-              Obtener QR
-            </ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-
+  <!-- <app-menu></app-menu> -->
   <!-- the main content -->
-  <ion-router-outlet id="main"></ion-router-outlet>
-  </ion-split-pane>
+  <ion-router-outlet id="principal"></ion-router-outlet>
+
 </ion-app>

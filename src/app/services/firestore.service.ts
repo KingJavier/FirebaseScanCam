@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 
 @Injectable({
     providedIn: 'root'
@@ -12,7 +12,6 @@ export class FirestoreService{
         const collection = this.firestore.collection(path);
         return collection.doc(id).set(data);
     }
-
 
     getDoc<Tipo>(path: string, id: string){
         return this.firestore.collection(path).doc<Tipo>(id).valueChanges();
